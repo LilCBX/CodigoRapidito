@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+                             http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         version="3.0">
+
+    <display-name>CodigoRapidito</display-name>
+
+    <!-- Configuración de Servlets -->
+    
+    <!-- Servlet para Alumnos -->
+    <servlet>
+        <servlet-name>AlumnoServlet</servlet-name>
+        <servlet-class>com.practica1.codigorapidito.AlumnoServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AlumnoServlet</servlet-name>
+        <url-pattern>/alumnos</url-pattern>
+    </servlet-mapping>
+
+    <!-- Servlet para Grados -->
+    <servlet>
+        <servlet-name>GradoServlet</servlet-name>
+        <servlet-class>com.practica1.codigorapidito.GradoServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GradoServlet</servlet-name>
+        <url-pattern>/grados</url-pattern>
+    </servlet-mapping>
+
+    <!-- Servlet para Cursos -->
+    <servlet>
+        <servlet-name>CursosServlet</servlet-name>
+        <servlet-class>com.practica1.codigorapidito.CursosServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CursosServlet</servlet-name>
+        <url-pattern>/cursos</url-pattern>
+    </servlet-mapping>
+
+    <!-- Servlet para Catedráticos -->
+    <servlet>
+        <servlet-name>CatedraticoServlet</servlet-name>
+        <servlet-class>com.practica1.codigorapidito.CatedraticoServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CatedraticoServlet</servlet-name>
+        <url-pattern>/catedraticos</url-pattern>
+    </servlet-mapping>
+
+    <!-- Configuración de páginas por defecto -->
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+
+</web-app>

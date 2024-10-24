@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Curso</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: #e9ecef;
+            font-family: 'Arial', sans-serif;
+            color: #495057;
+        }
+        .container {
+            max-width: 500px;
+            margin: 50px auto;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            border: 1px solid #dee2e6;
+        }
+        h1 {
+            text-align: center;
+            color: #343a40;
+            margin-bottom: 30px;
+            font-size: 28px;
+        }
+        label {
+            font-weight: bold;
+            color: #495057;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        input[type="text"], input[type="number"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ced4da;
+            background-color: #f8f9fa;
+            font-size: 16px;
+            box-sizing: border-box;
+            transition: border-color 0.3s ease-in-out;
+        }
+        input[type="text"]:focus, input[type="number"]:focus, textarea:focus {
+            border-color: #007bff;
+            outline: none;
+            background-color: #ffffff;
+        }
+        textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+        button[type="submit"] {
+            width: 100%;
+            padding: 12px;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        .form-group {
+            margin-bottom: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Agregar Curso</h1>
+        <form action="cursos" method="POST">
+            <div class="form-group">
+                <label for="nombreCurso">Nombre del Curso:</label>
+                <input type="text" id="nombreCurso" name="nombreCurso" required>
+            </div>
+
+            <div class="form-group">
+                <label for="descripcionCurso">Descripción del Curso:</label>
+                <textarea id="descripcionCurso" name="descripcionCurso" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="creditosCurso">Créditos del Curso:</label>
+                <input type="number" id="creditosCurso" name="creditosCurso" required>
+            </div>
+
+            <button type="submit">Agregar Curso</button>
+        </form>
+    </div>
+</body>
+</html>
+
+
